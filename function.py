@@ -39,7 +39,6 @@ def isprime(number):
                 return False        
             return True
 
-
 def eratossieve(maxval,ifprint):
     print("pick out prime by Eratosthenes's algorithm:")
     flag = [True] * (maxval + 1)
@@ -60,7 +59,7 @@ def eratossieve(maxval,ifprint):
     print(f"the sum of prime is{num_sum}")
     
     
-    
+
 
     
     
