@@ -130,17 +130,21 @@ def conectedwithstats():
         pt1 = (stats[i, 0], stats[i, 1])
         pt2 = (stats[i, 0] + stats[i, 2], stats[i, 1] + stats[i, 3])
         # 画外接矩形
-        # rectangle（） 函数模型：
-        # rectangle(CV_IN_OUT，Mat & img, Rect rec,const Scalar & color,
-        #            int thickness = 1, int lineType = LINE_8,
-        #            int shift = 0);
-        # 参数介绍：
-        # ICV_IN_OUT Mat & img: CV_IN_OUT Mat & img
-        # Rect rec: Rect类成员（包含矩形的左上角坐标以及长宽）
-        # const Scalar & color: 输出颜色信息
-        # int thickness: 表示线的粗细
-        # int lineType: 邻接关系，一般设置默认值
-        # int shift: 偏移，一般设0
+        """
+        rectangle（） 函数模型：
+            rectangle(CV_IN_OUT Mat& img, Rect rec,
+                              const Scalar& color, int thickness = 1,
+                              int lineType = LINE_8, int shift = 0);
+    
+    
+            参数介绍：
+            . ICV_IN_OUT Mat& img: CV_IN_OUT Mat& img
+            . Rect rec: Rect类成员（包含矩形的左上角坐标以及长宽）
+            . const Scalar& color:输出颜色信息
+            . int thickness: 表示线的粗细
+            . int lineType :邻接关系，一般设置默认值
+            . int shift: 偏移，一般设0
+        """
         cv.rectangle(th_mat, pt1, pt2, 255, 1, 8, 0)
     cv.imshow("dilate_mat", dilate_mat)
     cv.imshow("th_mat", th_mat)
