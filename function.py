@@ -85,7 +85,9 @@ def creat_image():
     cv.imshow("src", src)
 
 
+# 遍历所有像素点
 def traverse(image):
+    # 读取图片信息
     height = image.shape[0]
     width = image.shape[1]
     channels = image.shape[2]
