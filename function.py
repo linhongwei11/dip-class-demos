@@ -166,6 +166,7 @@ def origincount():
     # 腐蚀
     erode_mat = cv.erode(th_mat, element, 5)
     # 连通域标记
+    
     nccomps = cv.connectedComponentsWithStats(erode_mat)
     num = nccomps[0] - 1
     print(f"原点个数为：{num}")
