@@ -9,6 +9,7 @@ def calhog(src, hist, nangle, cellsize):
     # 判断读取的尺寸是否正确
     if cellsize > src.shape[0] or cellsize > src.shape[1]:
         return -1
+    
     # 参数设置
     nx = int(src.shape[1] / cellsize)
     ny = int(src.shape[0] / cellsize)
