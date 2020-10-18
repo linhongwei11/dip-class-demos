@@ -5,7 +5,6 @@ import math
 
 # 第二周练习1 rgb通道分离，并显示出来
 def image_split(image):
-  
     # split函数，将多通道图像分离
     b_image, g_image, r_image = cv.split(image)
     # 显示图片
