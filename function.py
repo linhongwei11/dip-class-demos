@@ -84,7 +84,6 @@ def houghsp_demo():
     if srcmat is None:
         print(" failed to read ")
         return
-    
     # 转化为灰度图
     grymat = cv.cvtColor(srcmat, cv.COLOR_BGR2GRAY)
     # 边缘检测
