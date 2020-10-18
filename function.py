@@ -90,6 +90,7 @@ def calvisibalmag(srcmat):
 def defdemo():
     # 读取图像
     srcmat = cv.imread("d:/timg.jpg")
+    
     # 转化为灰度图
     gry_mat = cv.cvtColor(srcmat, cv.COLOR_BGR2GRAY)
     # 调用傅里叶计算函数
