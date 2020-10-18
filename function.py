@@ -177,7 +177,6 @@ def img_correct():
         if gry_mat[height - 1, j] < 250:
             pt_3 = [j, height - 1]
             j = -1
-    
     for i in range(height - 1, -1, -1):
         if gry_mat[i, 0] < 250:
             pt_2 = [0, i]
