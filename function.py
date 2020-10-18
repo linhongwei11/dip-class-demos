@@ -9,7 +9,6 @@ def bgsub_demo():
     if capture.isOpened() is None:
         print("fail to open")
         return -1
-    
     cnt = 0
     while True:
         ret, frame = capture.read()
