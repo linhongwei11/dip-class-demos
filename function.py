@@ -50,6 +50,7 @@ def templatematching_demo():
             # 确定模板图片
             tempmat = frame[y:y + height, x:x + width]
             refmat = tempmat.copy()
+            
         # 进行模板匹配得到存储结果的矩阵
         resultmat = cv.matchTemplate(frame, refmat, matchmethod)
         # 进行归一化
