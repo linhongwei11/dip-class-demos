@@ -39,6 +39,7 @@ def isprime(number):
                 return False        
             return True
 
+
 def eratossieve(maxval,ifprint):
     print("pick out prime by Eratosthenes's algorithm:")
     flag = [True] * (maxval + 1)
