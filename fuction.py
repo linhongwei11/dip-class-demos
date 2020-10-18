@@ -10,6 +10,7 @@ def creatmaskbykmeans(src, mask):
     pixnum = width * height
     # 设置参数
     clustercount = 2
+    
     # 准备图片
     sampdata = src.reshape((pixnum, 3))
     km_data = sampdata.astype(np.float32)
