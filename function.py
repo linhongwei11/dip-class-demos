@@ -29,7 +29,6 @@ def rimblobanalysis():
     stats = ncomps[2]
     # 新建数组，存放标签值
     flag = [0] * ncomp
-    
     # 筛选连通域
     for i in range(ncomp):
         width = stats[i, 2]
