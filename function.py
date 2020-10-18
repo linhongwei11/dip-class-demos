@@ -104,6 +104,7 @@ def callback(m):
 
 # 添加滑动条
 def trackbar():
+    
     global img
     srcmat = cv.imread("d:/timg.jpg")
     # 转化为灰度图
