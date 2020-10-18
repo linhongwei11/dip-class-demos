@@ -70,7 +70,6 @@ def sobel_extraction():
     
     # 读取当前帧照片
     ret, frame = capture.read()
-    
     # 利用sobel算子进行边缘提取
     """
     sobel（） 函数模型：
