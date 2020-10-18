@@ -88,6 +88,7 @@ def sobel_extraction():
         . double delta: double类型的delta，表示在结果存入目标图（第二个参数dst）之前可选的delta值，有默认值0
         . int borderType：int类型的borderType，边界模式
     """
+    
     sobel_mat = cv.Sobel(frame, -1, 1, 0, 5)
     cv.imshow("sobel", sobel_mat)
     
