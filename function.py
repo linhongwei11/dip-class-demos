@@ -14,6 +14,7 @@ def gamma(grymat):
     # 建立查询表
     lut = [0.0] * 256
     y = 0.45
+    
     for i in range(256):
         lut[i] = saturate(math.pow(float(i) / 255, y) * 255)
     height = grymat.shape[0]
